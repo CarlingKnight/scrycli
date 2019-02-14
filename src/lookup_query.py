@@ -16,7 +16,7 @@ def print_query(query):
     for card in cards:
         if "card_faces" in card:
             print("{} is a multi-sided card, we don't quite support those yet.".format(card["name"]))
-            return
+            continue
         else:
             output_text = "{} - {}\n" \
                           "{}\n".format(card["name"], card["mana_cost"], card["oracle_text"])
