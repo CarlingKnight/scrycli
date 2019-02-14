@@ -1,0 +1,11 @@
+import sys
+from src import lookup_query
+
+
+def main(args):
+    arguments = ' '.join(args[1:])
+    lookup_query.print_query(arguments)
+
+
+if __name__ == "__main__":
+    main(sys.argv)
